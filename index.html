@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./main.css" />
+		<script src="./main.js" async defer></script>
+		<title>bookmarker</title>
+	</head>
+	<body>
+		<section class="hero">
+			<article class="hero__center">
+				<h3 class="hero__center__title">Create a new bookmark</h3>
+				<form class="hero__center__form" id="form">
+					<label for="title">Title:</label>
+					<input
+						class="input"
+						type="text"
+						name="title"
+						id="title"
+						placeholder="e.g. my ebay auction"
+					/>
+					<label for="url">Url:</label>
+					<input
+						class="input"
+						type="text"
+						name="url"
+						id="url"
+						placeholder="https://www.ebay.com"
+					/>
+					<button id="submiter" class="btn bg-accent">save</button>
+				</form>
+			</article>
+		</section>
+		<section class="array">
+			<h2 class="array__title">Your bookmarks:</h2>
+			<article class="array__cards"></article>
+		</section>
+
+		<div class="error" id="error">
+			<h4>Error</h4>
+			<p id="error__output"></p>
+			<i>(click to close)</i>
+		</div>
+	</body>
+</html>
